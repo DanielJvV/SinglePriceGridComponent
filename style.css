@@ -1,0 +1,178 @@
+:root {
+    /*Primary Colours*/
+    --prm-cyan: hsl(179, 62%, 43%);
+    --prm-bght-yellow: hsl(71, 73%, 54%);
+    /*Neutral*/
+    --lgt-gray: hsl(204, 43%, 93%);
+    --gray-blue: hsl(218, 22%, 67%);
+}
+
+
+/*font-family: 'Karla', sans-serif;*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/**************
+      Index
+1.) Typography      
+2.) Cards layout and position
+3.) Desktop Size
+4.) Footer / Challenge code      
+***************/
+
+
+/**************
+1.) Typograpy   
+***************/
+
+body {
+    font-size: 16px;
+    background-color: var(--lgt-gray);
+    font-family: "Karla", sans-serif;
+    line-height: 1.2rem;
+}
+
+ul {
+    list-style: none;
+}
+
+.card1 b {
+    color: var(--prm-cyan);
+    font-size: 1rem;
+}
+
+.card1 span {
+    color: var(--prm-bght-yellow);
+    font-size: 0.9rem;
+    display: inline-block;
+    margin: 1rem 0;
+}
+
+.card1 p {
+    color: var(--gray-blue);
+    font-size: 0.8rem;
+}
+
+.card2 p,
+.card3 li {
+    color: rgba(255, 255, 255, 0.808);
+    font-size: 0.8rem;
+}
+
+.card2 b,
+.card3 b {
+    color: white;
+    margin-bottom: 1rem;
+    margin-right: 0.3rem;
+    display: inline-block;
+}
+
+.cash {
+    font-size: 1.7rem;
+}
+
+#fullWhite {
+    color: white;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+button {
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: var(--prm-bght-yellow);
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+
+/**************
+2.) Cards layout and position  
+***************/
+
+.container {
+    width: 80%;
+    max-width: 600px;
+    margin: 3rem auto;
+}
+
+.card1 {
+    background-color: white;
+    max-width: 80%;
+    margin: auto;
+    padding: 1.5rem;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+
+.card2 {
+    background-color: var(--prm-cyan);
+    max-width: 80%;
+    margin: auto;
+    padding: 1.5rem;
+}
+
+button {
+    margin: auto;
+    width: 100%;
+    padding: 0.8rem 0;
+}
+
+.card3 {
+    background-color: rgb(37, 197, 197);
+    max-width: 80%;
+    margin: auto;
+    padding: 1.5rem;
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+
+
+/**************
+3.) Desktop Size    
+***************/
+
+@media screen and (min-width: 1024px) {
+    .container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        width: 80%;
+        max-width: 600px;
+        margin-top: 4rem;
+    }
+    .card1 {
+        width: 100%;
+        margin: 0;
+    }
+    .card2 {
+        width: 40%;
+        margin: 0;
+        border-bottom-left-radius: 0.25rem;
+    }
+    .card3 {
+        width: 40%;
+        margin: 0;
+        border-bottom-left-radius: 0;
+    }
+}
+
+
+/**************
+4.) Footer / Challenge code      
+***************/
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
